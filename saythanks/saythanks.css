@@ -6,16 +6,21 @@
     padding: 0 30px;
 }
 
+.wrap .logo {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 .promo {
-    /*background: #6B91B8;*/
+    background: #6B91B8;
     color: #ffffff;
     font: 17px/26px "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #6a6a6a;
+
     -webkit-font-smoothing: antialiased;
 }
 .promo .wrap {
     position: relative;
-    height:100vh;
+    height:85vh;
 }
 .promo-text {
     width: 460px;
@@ -95,4 +100,19 @@
 }
 .promo-link:hover {
     color: #c9f9f0;
+}
+
+.btn {
+    margin: 10px 0;
+    padding: 12px 24px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #6B91B8;
+    text-decoration: none !important
+}
+ 
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
 }

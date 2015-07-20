@@ -2,34 +2,31 @@
 <html>
   <head>
     <title>Scott Refugio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Scott Refugio" />
     <meta name="description" content="Scott Refugio's project page" />
     <meta name="keywords"  content="scott refugio,ios,iphone,photography,medical school" />
     <meta name="Resource-type" content="Document" />
 
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="video.css">
-    <link rel="stylesheet" type="text/css" href="foreground.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/video.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="saythanks/saythanks.css">
-    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css">
-
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.fullPage.css">
     <!-- JS -->
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="jquery.fullPage.min.js"></script>
     <script type="text/javascript" src="https://use.fonticons.com/81174829.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
-    <script type="text/javascript" src="video.js"></script>
+    <script type="text/javascript" src="assets/js/video.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
+
+    <script type="text/javascript" src="jquery.fullPage.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
         $('#fullpage').fullpage({
-          // sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-          // anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
-          // menu: '#menu',
-          scrollingSpeed: 1000
+          // sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
         });
       });
     </script>
@@ -46,29 +43,27 @@
 
   </head>
   <body>
+    <div class="social affix">
+      <ul class="social-links">
+        <li><a href="https://www.linkedin.com/in/refugio" class="icon fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+        <li><a href="https://instagram.com/disneyparks365/" class="icon fa-instagram" target="_blank"><span class="label">@disneyparks365</span></a></li>
+        <li><a href="https://www.flickr.com/photos/105443235@N05/" class="icon fa-flickr" target="_blank"><span class="label">Flickr</span></a></li>
+        <li><a href="https://www.facebook.com/scott.refugio" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+        <li><a href="https://twitter.com/ScottRefugio" class="icon fa-twitter" target="_blank"><span class="label">@ScottRefugio</span></a></li>
+        <li><a href="mailto:hello@scottrefug.io" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+      </ul>
+    </div>
     <div id="fullpage">
-      <div class="section homepage-hero-module" id="section0">
+      <div class="section active homepage-hero-module" id="section0">
         <div class="video-container">
-          <div class="filter"></div>
-            <video autoplay loop class="fillWidth">
-              <source src="assets/videos/Hello-World.mp4" type="video/mp4" />Your browser does not support the video tag. Please upgrade your browser.
-              <source src="assets/videos/Hello-World.webm" type="video/webm" />Your browser does not support the video tag. Please upgrade your browser.
-            </video>
-            <div class="poster hidden">
-              <img src="assets/videos/Hello-World.jpg" alt="">
-            </div> <!--poster hidden-->
-          </div> <!--filter-->
+          <video autoplay loop class="fillWidth">
+            <source src="assets/videos/Hello-World.mp4" type="video/mp4" />Your browser does not support the video tag. Please upgrade your browser.
+            <source src="assets/videos/Hello-World.webm" type="video/webm" />Your browser does not support the video tag. Please upgrade your browser.
+          </video>
+          <div class="poster hidden">
+            <img src="assets/videos/Hello-World.jpg" alt="">
+          </div> <!--poster hidden-->
           <div class="foreground">
-            <div class="social affix">
-              <ul class="social-links">
-                <li><a href="https://www.linkedin.com/in/refugio" class="icon fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
-                <li><a href="https://instagram.com/disneyparks365/" class="icon fa-instagram" target="_blank"><span class="label">@disneyparks365</span></a></li>
-                <li><a href="https://www.flickr.com/photos/105443235@N05/" class="icon fa-flickr" target="_blank"><span class="label">Flickr</span></a></li>
-                <li><a href="https://www.facebook.com/scott.refugio" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
-                <li><a href="https://twitter.com/ScottRefugio" class="icon fa-twitter" target="_blank"><span class="label">@ScottRefugio</span></a></li>
-                <li><a href="mailto:hello@scottrefug.io" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-              </ul>
-            </div>
             <div class="content">
               <div class="line1">HELLO!</div>
               <div class="line2">I'M SCOTT REFUGIO</div>
@@ -85,14 +80,24 @@
         </div> <!--video-container-->
       </div> <!--homepage-hero-module-->
       <div class="section saythanks" id="section1">
-        <a name="saythanks"></a>
+        <div class="wrap">
+          <div class="logo">
+            <a href="http://www.saythanksapp.com" target="_blank">
+              <img src="upload/logo.png" width="150" alt="SayThanksLogo">
+            </a>
+          </div><!-- logo -->
+        </div><!-- wrap -->
         <section class="promo">
           <div class="wrap">
             <div class="promo-text">
-                <div class="promo-title">A Little Gratitude<br/>Can Go A Long Way</div>
-                <p>SayThanks is a quick way to anonymously say "thank you" to the people you interact with everyday. Nothing is too small to share your appreciation. Sign up and help others get  noticed!</p>
-            </div><!-- promo-text -->
-            <a href="http://www.saythanksapp.com">
+              <div class="promo-title">A Little Gratitude<br/>Can Go A Long Way
+              </div>
+              <p>SayThanks is a quick way to anonymously say "thank you" to the people you interact with everyday. Nothing is too small to share your appreciation. Sign up and help others get noticed!</p>
+              <a href="http://www.saythanksapp.com" target="_blank">
+                <div class="btn btn-lg">Go to SayThanks' Website</div>
+              </a>
+            </div> <!-- promo-text -->
+            <a href="http://www.saythanksapp.com" target="_blank">
               <img src="upload/promo.png" width="400" alt="" />
             </a>
           </div><!-- wrap -->
