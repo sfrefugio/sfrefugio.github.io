@@ -1,64 +1,105 @@
-<!DOCTYPE HTML>
-<!--
-	Aerial by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Scott Refugio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<script src="https://use.fonticons.com/81174829.js"></script>
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  <head>
+    <title>Scott Refugio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Scott Refugio" />
+    <meta name="description" content="Scott Refugio's project page" />
+    <meta name="keywords"  content="scott refugio,ios,iphone,photography,medical school" />
+    <meta name="Resource-type" content="Document" />
 
-		  ga('create', 'UA-48567406-4', 'auto');
-		  ga('send', 'pageview');
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="video.css">
+    <link rel="stylesheet" type="text/css" href="foreground.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="saythanks/saythanks.css">
+    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css">
 
-		</script>
-	</head>
-	<body class="loading">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
+    <!-- JS -->
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="jquery.fullPage.min.js"></script>
+    <script type="text/javascript" src="https://use.fonticons.com/81174829.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript" src="video.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#fullpage').fullpage({
+          // sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+          // anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+          // menu: '#menu',
+          scrollingSpeed: 1000
+        });
+      });
+    </script>
 
-				<!-- Header -->
-					<header id="header">
-						<h1>Scott Refugio</h1>
-						<p>Nothing &nbsp;&bull;&nbsp; Interesting &nbsp;&bull;&nbsp; Here</p>
-						<nav>
-							<ul>
-								<li><a href="https://www.linkedin.com/in/refugio" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-								<li><a href="https://twitter.com/ScottRefugio" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="https://www.facebook.com/scott.refugio" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-								<li><a href="https://instagram.com/disneyparks365/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="https://www.flickr.com/photos/105443235@N05/" class="icon fa-flickr"><span class="label">Flickr</span></a></li>
-<!-- 								<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li> -->
-							</ul>
-						</nav>
-					</header>
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-48567406-4', 'auto');
+      ga('send', 'pageview');
+    </script>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<span class="copyright">&copy; Scott Refugio &nbsp;&bull;&nbsp; Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
-					</footer>
-
-			</div>
-		</div>
-		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-		<script>
-			window.onload = function() { document.body.className = ''; }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		</script>
-	</body>
+  </head>
+  <body>
+    <div id="fullpage">
+      <div class="section homepage-hero-module" id="section0">
+        <div class="video-container">
+          <div class="filter"></div>
+            <video autoplay loop class="fillWidth">
+              <source src="assets/videos/Hello-World.mp4" type="video/mp4" />Your browser does not support the video tag. Please upgrade your browser.
+              <source src="assets/videos/Hello-World.webm" type="video/webm" />Your browser does not support the video tag. Please upgrade your browser.
+            </video>
+            <div class="poster hidden">
+              <img src="assets/videos/Hello-World.jpg" alt="">
+            </div> <!--poster hidden-->
+          </div> <!--filter-->
+          <div class="foreground">
+            <div class="social affix">
+              <ul class="social-links">
+                <li><a href="https://www.linkedin.com/in/refugio" class="icon fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+                <li><a href="https://instagram.com/disneyparks365/" class="icon fa-instagram" target="_blank"><span class="label">@disneyparks365</span></a></li>
+                <li><a href="https://www.flickr.com/photos/105443235@N05/" class="icon fa-flickr" target="_blank"><span class="label">Flickr</span></a></li>
+                <li><a href="https://www.facebook.com/scott.refugio" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+                <li><a href="https://twitter.com/ScottRefugio" class="icon fa-twitter" target="_blank"><span class="label">@ScottRefugio</span></a></li>
+                <li><a href="mailto:hello@scottrefug.io" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+              </ul>
+            </div>
+            <div class="content">
+              <div class="line1">HELLO!</div>
+              <div class="line2">I'M SCOTT REFUGIO</div>
+              <div class="line3">AND I CODE IDEAS.</div>
+            </div> <!--content-->
+            <div style="position: absolute; bottom: 20px; left: 50%; margin-left: -19px;">
+              <h1 class="text-white">
+                <a href="#saythanks">
+                  <i class="angle-down fa fa-angle-down"></i>
+                </a>
+              </h1>
+            </div>
+          </div> <!--foreground-->
+        </div> <!--video-container-->
+      </div> <!--homepage-hero-module-->
+      <div class="section saythanks" id="section1">
+        <a name="saythanks"></a>
+        <section class="promo">
+          <div class="wrap">
+            <div class="promo-text">
+                <div class="promo-title">A Little Gratitude<br/>Can Go A Long Way</div>
+                <p>SayThanks is a quick way to anonymously say "thank you" to the people you interact with everyday. Nothing is too small to share your appreciation. Sign up and help others get  noticed!</p>
+            </div><!-- promo-text -->
+            <a href="http://www.saythanksapp.com">
+              <img src="upload/promo.png" width="400" alt="" />
+            </a>
+          </div><!-- wrap -->
+        </section><!-- promo -->
+      </div> <!--saythanks-->
+      <div class="section pulmacalc" id="section2">
+      </div> <!--pulmacalc-->
+    </div> <!--fullpage-->
+  </body>
 </html>
