@@ -1,0 +1,24 @@
+
+.pulmacalc {
+	color: #fff;
+}
+
+.pulmacalc .container .logo {
+
+}
+
+.pulmacalc .container {
+    margin: 0 auto;
+    max-width: 940px;
+    padding: 0 30px;
+}
+
+.pulmacalc .logo {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.pulmacalc .logo p {
+	font-family: 'Muli', sans-serif;
+	font-size: 48px;
+}
